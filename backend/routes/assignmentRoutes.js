@@ -1,4 +1,3 @@
-
 const express = require('express');
 const router = express.Router();
 const assignmentModel = require('../models/assignmentModel');
@@ -20,6 +19,36 @@ router.post('/', async (req, res) => {
     res.status(201).json(newAssignment);
   } catch (error) {
     res.status(500).json({ error: 'Error creating assignment' });
+  }
+});
+
+// Update an existing assignment by ID
+router.put('/:id', async (req, res) => {
+  const assignmentId = req.params.id; // Get assignment ID from the URL
+  try {
+    const updatedAssignment = await assignmentModel.updateAssignment(assignmentId, req.body);
+    if (updatedAssignment) {
+      res.json(updatedAssignment);
+    } else {
+      res.status(404).json({ error: 'Assignment not found' });
+    }
+  } catch (error) {
+    res.status(500).json({ error: 'Error updating assignment' });
+  }
+});
+
+// Delete an assignment by ID
+router.delete('/:id', async (req, res) => {
+  const assignmentId = req.params.id; // Get assignment ID from the URL
+  try {
+    const deletedAssignment = await assignmentModel.deleteAssignment(assignmentId);
+    if (deletedAssignment) {
+      res.json(deletedAssignment);
+    } else {
+      res.status(404).json({ error: 'Assignment not found' });
+    }
+  } catch (error) {
+    res.status(500).json({ error: 'Error deleting assignment' });
   }
 });
 
