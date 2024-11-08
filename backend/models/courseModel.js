@@ -1,4 +1,4 @@
-const pool = require('../db/dbConfig');
+const pool = require('../Config/dbConfig');
 
 // Get all courses
 const getAllCourses = async () => {

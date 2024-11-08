@@ -1,4 +1,4 @@
-const pool = require('../db/dbConfig');
+const pool = require('../Config/dbConfig');
 
 
 const getAssignmentsByCourseId = async (courseId) => {
