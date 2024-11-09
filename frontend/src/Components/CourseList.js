@@ -7,7 +7,7 @@ const CourseList = () => {
   const [courses, setCourses] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:3500/courses')
+    axios.get('http://localhost:5342/courses')
       .then(response => setCourses(response.data))
       .catch(error => {
         console.error('Error fetching courses:', error);

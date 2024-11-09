@@ -11,6 +11,31 @@
     color: #333;
   }
   
+  .controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .controls button {
+    padding: 8px 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .controls button:hover {
+    background-color: #2980b9;
+  }
+  
+  .controls .active {
+    background-color: #1abc9c;
+  }
+  
   .assignment-list-items {
     list-style-type: none;
     padding: 0;
@@ -31,18 +56,6 @@
   
   .assignment-card:hover {
     transform: scale(1.02);
-  }
-  
-  .assignment-title {
-    color: #2c3e50;
-    font-size: 1.2em;
-    margin-bottom: 5px;
-  }
-  
-  .assignment-due-date,
-  .assignment-status {
-    color: #555;
-    font-size: 0.9em;
   }
   
   .completed .assignment-status {
