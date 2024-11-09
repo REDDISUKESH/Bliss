@@ -1,0 +1,85 @@
+/* AssignmentList.css */
+.assignment-list {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .title {
+    text-align: center;
+    color: #333;
+  }
+  
+  .assignment-list-items {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .assignment-item {
+    margin-bottom: 15px;
+  }
+  
+  .assignment-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .assignment-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .assignment-title {
+    color: #2c3e50;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+  
+  .assignment-due-date,
+  .assignment-status {
+    color: #555;
+    font-size: 0.9em;
+  }
+  
+  .completed .assignment-status {
+    color: #27ae60; /* Green color for completed assignments */
+    font-weight: bold;
+  }
+  
+  .complete-btn {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .complete-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  .add-assignment-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .add-assignment-btn:hover {
+    background-color: #2980b9;
+  }
+  

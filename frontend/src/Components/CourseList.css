@@ -1,0 +1,76 @@
+/* CourseList.css */
+.course-list {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .title {
+    text-align: center;
+    color: #333;
+  }
+  
+  .course-list-items {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .course-item {
+    margin-bottom: 15px;
+  }
+  
+  .course-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .course-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .course-name {
+    color: #2c3e50;
+    font-size: 1.2em;
+    margin-bottom: 5px;
+  }
+  
+  .course-professor,
+  .course-duration {
+    color: #555;
+    font-size: 0.9em;
+  }
+  
+  .view-assignments-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .view-assignments-link:hover {
+    color: #2980b9;
+  }
+  
+  .add-course-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .add-course-btn:hover {
+    background-color: #2980b9;
+  }
+  
